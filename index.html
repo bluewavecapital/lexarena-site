@@ -1,0 +1,111 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>LexArena</title>
+  <meta name="description" content="The arena opens in 2027.">
+  <meta name="theme-color" content="#1E2761">
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="LexArena">
+  <meta property="og:description" content="The arena opens in 2027.">
+  <link rel="icon" type="image/png" href="assets/favicon.png">
+  <link rel="apple-touch-icon" href="assets/apple-touch-icon.png">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <!-- Caladea stands in for Cambria on devices that don't have it -->
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Caladea:wght@700&display=swap">
+  <style>
+    /* Brand colors */
+    :root {
+      --navy: #1E2761;
+      --navy-2: #2A3575;
+      --gold: #C9A227;
+      --white: #FFFFFF;
+      --serif: Cambria, Caladea, Georgia, "Times New Roman", serif;
+    }
+
+    *, *::before, *::after { box-sizing: border-box; }
+
+    html {
+      background: var(--navy);
+    }
+
+    body {
+      margin: 0;
+      min-height: 100vh;
+      min-height: 100svh;
+      background-color: var(--navy);
+      background-image: radial-gradient(ellipse at 50% 42%, var(--navy-2) 0%, var(--navy) 68%);
+      color: var(--white);
+      font-family: var(--serif);
+      -webkit-font-smoothing: antialiased;
+    }
+
+    main {
+      min-height: 100vh;
+      min-height: 100svh;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      gap: clamp(20px, 4vh, 36px);
+      padding: 48px 16px;
+      text-align: center;
+    }
+
+    /* White icon in a navy circle with a gold ring */
+    .badge {
+      width: clamp(84px, 11vw, 120px);
+      aspect-ratio: 1;
+      border-radius: 50%;
+      border: 2px solid var(--gold);
+      background: var(--navy);
+      display: grid;
+      place-items: center;
+    }
+
+    .badge img {
+      width: 58%;
+      height: auto;
+      display: block;
+    }
+
+    .badge-globe {
+      margin-top: clamp(8px, 3vh, 24px);
+    }
+
+    h1 {
+      margin: 0;
+      font-weight: 700;
+      font-size: clamp(44px, 10vw, 104px);
+      line-height: 1.05;
+      letter-spacing: -0.01em;
+    }
+
+    .rule {
+      width: clamp(72px, 10vw, 120px);
+      height: 2px;
+      margin: 0;
+      border: 0;
+      background: var(--gold);
+    }
+
+    .tagline {
+      margin: 0;
+      font-weight: 700;
+      font-size: clamp(22px, 4.2vw, 42px);
+      line-height: 1.2;
+    }
+  </style>
+</head>
+<body>
+  <main>
+    <div class="badge"><img src="assets/scale.png" alt="" width="256" height="256"></div>
+    <h1>LexArena</h1>
+    <hr class="rule">
+    <p class="tagline">The arena opens in 2027.</p>
+    <div class="badge badge-globe"><img src="assets/globe.png" alt="" width="256" height="256"></div>
+  </main>
+</body>
+</html>
